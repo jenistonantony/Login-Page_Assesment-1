@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_page/const/custom_buttons.dart';
 import 'package:provider/provider.dart';
 import 'package:login_page/provider/theme_provider.dart';
 
@@ -12,10 +13,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurpleAccent,
-        title: Text(
-          "Home Page",
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-        ),
+        title: Text("Home Page", style: heading),
         actions: [
           IconButton(
             icon: Icon(
@@ -25,10 +23,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: Text(
-          " 👋 Welcome to the Home Page!",
-          style: TextStyle(fontSize: 20),
-        ),
+        child: Text(" 👋 Welcome to the Home Page!", style: subheading),
       ),
     );
   }
